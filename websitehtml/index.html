@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D.I.P.S</title>
+	<meta name= "viewport" content= "width= device-width, initial-scale=  	1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="images/DIPS.png" class="logo">
+
+				<ul class="sign-nav animated slideInDown" id="check-class">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Sign In</a></li>
+				</ul>
+				<a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+			</div>
+		</nav>
+		<div class="main-content-header">
+			<h1> WELCOME TO <span class="colorchange">D.I.P.S</span><br>
+				Importance & Benifits </h1>
+				
+		</div>
+		
+		<nav>
+			<div class="row-i">
+				<ul class="info-nav animated slideInUp" id="check-class-i">
+					<li><a href="#" class="btn btna"> About</a></li>
+					<li><a href="#" class="btn btnf"> FAQ'S</a></li>
+					<li><a href="#" class="btn btnc"> Contact</a></li>
+					<li><a href="#" class="btn btnm"> Made by</a></li>
+				</ul>
+				<a href="#" class="mobile-icon-i"  onclick="slideshowi()"> <i class="fa fa-bars"></i> </a>
+			</div>
+		</nav>
+	</header>
+
+	<script type="text/javascript">
+		
+		function slideshow(){
+			 var x = document.getElementById('check-class');
+			 if(x.style.display === "none"){
+			 	x.style.display="block";
+			 }else{
+			 	x.style.display="none";
+			 }
+		}
+
+		function slideshowi(){
+			 var xi = document.getElementById('check-class-i');
+			 if(xi.style.display === "none"){
+			 	xi.style.display="block";
+			 }else{
+			 	xi.style.display="none";
+			 }
+		}	
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/back1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 500vh;
+}
+
+/*header{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 200px;
+	height: 500vh;
+}*/
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+.row{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.row-i{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 100px;
+	margin-right: 250px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+.sign-nav{
+	float: right;
+	margin-top: 60px;
+}
+
+.sign-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.sign-nav li a{
+	padding: 5px 0;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%; 
+	font-weight: 100;
+}
+
+.sign-nav li a:hover{
+	border-bottom: 2px solid violet;
+}
+
+
+
+
+.info-nav{
+	float: right;
+	margin-top: 500px;
+}
+
+.info-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.info-nav li a{
+	padding: 0px 10;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 80%; 
+	font-weight: 100;
+}
+
+.info-nav li a:hover{
+	border-bottom: 2px solid violet;
+}
+
+
+
+
+
+
+
+.main-content-header{
+	width: 1180px;
+	padding:0 2%;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 45%;
+	left: 38%;
+	transform: translate(-50%, -50%);
+
+}
+
+h1{
+	color: white;
+	font-size: 200%;  
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: 70%;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+
+.btna{
+	background-color: transparent;
+	color: violet;
+	margin-left: 15px;
+	margin-right: 15px;
+	border: 1px solid violet;
+}
+
+.btna:hover{
+	background-color: white;
+}
+
+.btnf{
+	background-color: transparent;
+	color: white;
+	margin-right: 15px;
+	border: 1px solid white;
+}
+
+.btnf:hover{
+	background-color: violet;
+}
+
+.btnc{
+	background-color: transparent;
+	color: violet;
+	margin-right: 800px;
+	border: 1px solid violet;
+}
+
+.btnc:hover{
+	background-color: white;
+}
+
+.btnm{
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+}
+
+.btnm:hover{
+	background-color: violet;
+}
+
+.colorchange{
+	animation:  colorchangedips 1s infinite;
+}
+
+@keyframes colorchangedips{
+	0%{color: red;}
+	25%{color:violet; ;}
+	50%{ color: white; }
+	100%{ color:violet;  }
+}
+
+.mobile-icon{display: none;}
+
+.mobile-icon-i{display: none;}
+
+/*//////// Responsive queries //////////*/
+
+@media only screen and (max-width: 1500px){
+	.main-content-header{
+		width:70%;
+		padding:0 2%;
+	}
+
+	.row{
+		width:100%;
+		padding:0 2%;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	h1{font-size: 160%;}
+}
+
+@media only screen and (max-width: 768px){
+	h1{font-size: 140%;}	
+
+	.sign-nav{display: none;}
+
+	.mobile-icon{ display: inline-block; 
+		color: white;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+
+	.sign-nav{float: left;}
+
+	.sign-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+	
+}
+
+@media only screen and (max-width: 1480px){
+	.info-nav{display: none;}
+
+	.mobile-icon-i{ display: inline-block; 
+		color: white;
+		float: right;
+		margin-top: 500px;
+		margin-right: 20px;
+	}
+
+	.info-nav{float: left;}
+
+	.info-nav li{
+		display:block;
+		margin-top: 83px;
+	}
+	
+}
+
+@media only screen and (max-width: 480px){
+	h1{font-size: 120%;}
+}
